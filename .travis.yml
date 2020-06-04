@@ -4,4 +4,4 @@ services:
 before_install:
 	- docker build -t hamzamirza/docker-react-app-image -f dockerfile.dev .
 script:
-	- docker run -it --name=hamzamirza/docker-react-app-cont hamzamirza/docker-react-app-image npm run test -- --coverage
+	- docker run  hamzamirza/docker-react-app-image npm run test -- --coverage
